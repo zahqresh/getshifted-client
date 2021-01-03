@@ -1,0 +1,44 @@
+.mainHeading {
+    margin-top: 15rem;
+}
+
+.between {
+    margin: 10px;
+}
+
+.gradient {
+    background: rgb(246, 94, 147);
+    background: linear-gradient(287deg, rgba(246, 94, 147, 1) 0%, rgba(235, 122, 25, 1) 100%);
+    height: 100vh;
+    color: white;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .svg{
+        display: none;
+    }
+}
+
+
+.loginJumbotron{
+    width: 70%;
+    margin: auto;
+    margin-top: 10rem;
+}
+
+.formGroup{
+    text-align: left;
+}
+
+.agencyRegisterForm{
+    text-align: left;
+    
+}
+
+.agencyRegisterInput{
+    margin-top: 5px;
+}
+
+.agencyRegisterButton{
+    margin-top: 2rem;
+}
