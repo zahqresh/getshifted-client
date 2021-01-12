@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import { Col, Container, Row, Jumbotron } from "react-bootstrap";
 import { AiFillStar, AiOutlineStar, AiOutlinePaperClip } from "react-icons/ai";
 import { MdLocationOn, MdCake, MdEmail, MdFace } from "react-icons/md";
-import { Workernav } from "./WorkerNav";
-import img from "./profile.png";
-import styles from "./Worker.module.css";
-export function WorkerProfile(props) {
+import styles from "../Worker/Worker.module.css";
+import { AgencyNav } from "./AgencyNav";
+import img from "./img.jpg";
+export function Agencyprofile(props) {
   return (
     <div className={styles.profileBg}>
-      <Workernav />
+      <AgencyNav />
       <Container className="pt-5">
         <Jumbotron className={styles.profileJumbotron}>
           <Row>
@@ -22,7 +22,7 @@ export function WorkerProfile(props) {
                 aspernatur eos, aut ullam.
               </div>
               <div className="text-left mt-3">
-                <small style={{ color: "grey" }}>Skills</small> <br />
+                <small style={{ color: "grey" }}>Skills Needed</small> <br />
                 <AiOutlinePaperClip /> Lorem ipsum dolor sit amet <br />
                 <AiOutlinePaperClip /> Lorem ipsum dolor sit amet
                 <br />
@@ -40,7 +40,7 @@ export function WorkerProfile(props) {
               <h4>John Doe</h4>
               <MdLocationOn />
               <small style={{ color: "grey" }}>Lorem ipsum dolor sit</small>
-              <p>Health Care Provider</p>
+              <p>Health Care Agency</p>
               <small style={{ color: "grey" }}>RATINGS</small>
               <p>
                 8,6 <AiFillStar /> <AiFillStar /> <AiFillStar /> <AiFillStar />
@@ -54,23 +54,14 @@ export function WorkerProfile(props) {
                   <MdEmail />
                 </b>
                 {"   "}
-                johndoe@exmaple.com <br />
+                agency@exmaple.com <br />
                 <b>
                   <MdLocationOn />
                 </b>
                 {"   "}
                 Lorem ipsum dolor sit amet. <br />
-                <b>
-                  <MdCake />
-                </b>
-                {"   "}
-                01/03/1980 <br />
-                <b>
-                  <MdFace />
-                </b>
-                {"   "}
-                Male
               </div>
+              <hr />
             </Col>
           </Row>
         </Jumbotron>

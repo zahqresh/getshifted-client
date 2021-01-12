@@ -1,5 +1,6 @@
 .Navbar{
     text-align: left;
+    background-color: #1d4354;
 }
 
 
@@ -15,7 +16,7 @@
 }
 
 .profileBg{
-    background-color: #f8f9fa;
+    background-color: #f7f7f7;
     height: 100vh;
 }
 

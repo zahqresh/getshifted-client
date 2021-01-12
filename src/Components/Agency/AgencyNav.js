@@ -7,8 +7,8 @@ import {
   Button,
   FormControl,
 } from "react-bootstrap";
-import styles from "./Worker.module.css";
-export function Workernav(props) {
+import styles from "./Agency.module.css";
+export function AgencyNav(props) {
   return (
     <>
       <Navbar className={styles.Navbar} variant="dark" expand="lg">
@@ -33,7 +33,7 @@ export function Workernav(props) {
           <Form inline>
             <FormControl
               type="text"
-              placeholder="Search Agency"
+              placeholder="Search Worker"
               className="mr-sm-2"
             />
             <Button className={styles.searchBtn} variant="outline-success">
