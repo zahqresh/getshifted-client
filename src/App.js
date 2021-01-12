@@ -9,22 +9,28 @@ import {
 import { Login } from './Components/Main/Login';
 import { WorkerRegister } from './Components/Main/WorkerRegister';
 import { AgencyRegister } from './Components/Main/AgencyRegister';
+import { WorkerProfile } from './Components/Worker/Profile';
 function App() {
   return (
     <div className="App">
       <Router>
         <Switch>
-          <Route exact path='/login'>
-            <Login/>
+          {/* Main routes */}
+          <Route exact path="/login">
+            <Login />
           </Route>
-          <Route exact path='/' >
-          <LandingPage/>
+          <Route exact path="/">
+            <LandingPage />
           </Route>
-          <Route exact path='/worker/register' >
-          <WorkerRegister/>
+          <Route exact path="/worker/register">
+            <WorkerRegister />
           </Route>
-          <Route exact path='/agency/register' >
-          <AgencyRegister/>
+          <Route exact path="/agency/register">
+            <AgencyRegister />
+          </Route>
+          {/* routes for worker */}
+          <Route exact path="/worker/Profile">
+           <WorkerProfile/>
           </Route>
         </Switch>
       </Router>

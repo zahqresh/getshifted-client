@@ -1,5 +1,6 @@
 .mainHeading {
     margin-top: 15rem;
+    color: whitesmoke;
 }
 
 .between {
@@ -7,15 +8,21 @@
 }
 
 .gradient {
-    background: rgb(246, 94, 147);
-    background: linear-gradient(287deg, rgba(246, 94, 147, 1) 0%, rgba(235, 122, 25, 1) 100%);
     height: 100vh;
-    color: white;
+    background: #ee0979;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 @media only screen and (max-device-width: 480px) {
     .svg{
         display: none;
+    }
+    .mainHeading{
+        margin-top: 6rem;
     }
 }
 
@@ -23,7 +30,7 @@
 .loginJumbotron{
     width: 70%;
     margin: auto;
-    margin-top: 10rem;
+    margin-top: 6rem;
 }
 
 .formGroup{
@@ -41,4 +48,13 @@
 
 .agencyRegisterButton{
     margin-top: 2rem;
+}
+
+
+
+/* css for worker registration page */
+.WorkerRegisterContainer{
+    padding-top: 5rem;
+    text-align: left;
+    
 }
